@@ -40,6 +40,9 @@
     <Reference Include="DevExpress.XtraBars.v18.2" />
     <Reference Include="DevExpress.Sparkline.v18.2.Core" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -52,16 +55,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Paneller\AnaPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Paneller\AnaPanel.Designer.cs">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Cari\CariListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paneller\Cari\CariListesi.Designer.cs">
+      <DependentUpon>CariListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\Cari\YeniCari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paneller\Cari\YeniCari.Designer.cs">
+      <DependentUpon>YeniCari.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Paneller\AnaPanel.resx">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\Cari\YeniCari.resx">
+      <DependentUpon>YeniCari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -72,6 +90,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -82,6 +101,48 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add-group.png" />
+    <None Include="Resources\xls1.png" />
+    <None Include="Resources\shuffle1.png" />
+    <None Include="Resources\share1.png" />
+    <None Include="Resources\pdf1.png" />
+    <None Include="Resources\list1.png" />
+    <None Include="Resources\list %281%291.png" />
+    <None Include="Resources\html1.png" />
+    <None Include="Resources\funds1.png" />
+    <None Include="Resources\filter1.png" />
+    <None Include="Resources\edit1.png" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\cancel1.png" />
+    <None Include="Resources\barcode1.png" />
+    <None Include="Resources\add-group1.png" />
+    <Content Include="Resources\barcode.png" />
+    <Content Include="Resources\cancel.png" />
+    <Content Include="Resources\delete.png" />
+    <Content Include="Resources\edit.png" />
+    <Content Include="Resources\filter.png" />
+    <Content Include="Resources\funds.png" />
+    <Content Include="Resources\html.png" />
+    <Content Include="Resources\list %281%29.png" />
+    <Content Include="Resources\list.png" />
+    <Content Include="Resources\pdf.png" />
+    <Content Include="Resources\share.png" />
+    <Content Include="Resources\shuffle.png" />
+    <Content Include="Resources\xls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Paneller\Arac\" />
+    <Folder Include="Paneller\Ayar\" />
+    <Folder Include="Paneller\CekSenet\" />
+    <Folder Include="Paneller\Diger\" />
+    <Folder Include="Paneller\Fatura\" />
+    <Folder Include="Paneller\Finansman\" />
+    <Folder Include="Paneller\Personel\" />
+    <Folder Include="Paneller\Rapor\" />
+    <Folder Include="Paneller\Stok\" />
+    <Folder Include="Paneller\TeklifSiparis\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

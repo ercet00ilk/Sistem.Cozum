@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
+using Sistem.Masaustu.Paneller;
 
 namespace Sistem.Masaustu
 {
@@ -19,7 +20,7 @@ namespace Sistem.Masaustu
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new Form1());
+            Application.Run(new AnaPanel());
         }
     }
 }
